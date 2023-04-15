@@ -1,0 +1,5 @@
+package chess.logic.moves;
+
+public enum BoardMoveType {
+    NON_SPECIAL, CASTLE, CAPTURE, ENPASSANT_CAPTURE, NORMAL_PAWN_MOVE, TWO_SQUARES_PAWN_MOVE, PROMOTION_MOVE
+}
