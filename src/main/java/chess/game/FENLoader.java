@@ -30,6 +30,9 @@ import static chess.utils.PiecesMapManager.addPieceToPiecesMap;
 import static chess.utils.PiecesMapManager.createPiecesMap;
 
 public class FENLoader {
+    private FENLoader() {
+    }
+
     public static Game loadFromFEN(String FEN) throws Exception {
         List<String> splitFEN = new ArrayList<>(Arrays.asList(FEN.split(" ")));
 
@@ -306,7 +309,7 @@ public class FENLoader {
                     }
                 }
 
-                if(kingColor == FigureColor.BLACK) {
+                if (kingColor == FigureColor.BLACK) {
 
                     if (firstRookColor == FigureColor.BLACK && firstRookRow == kingRow) {
                         if (firstRookColumn < kingColumn) {

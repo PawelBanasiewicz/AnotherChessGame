@@ -45,6 +45,9 @@ import static chess.utils.Constants.WHITE_ROOK_LONG_CASTLE_SQUARE;
 import static chess.utils.Constants.WHITE_ROOK_SHORT_CASTLE_SQUARE;
 
 public class LegalMovesChecker {
+    private LegalMovesChecker() {
+    }
+
 
     public static List<BoardMove> getAllPossibleMovesFromSelectedPosition(Game game, int sourceColumn, int sourceRow) {
         List<BoardMove> allPossibleMovesFromSelectedPosition = new ArrayList<>();

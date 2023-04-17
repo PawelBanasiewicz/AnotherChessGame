@@ -24,6 +24,9 @@ import static chess.utils.Constants.BLACK_PROMOTION_ROW;
 import static chess.utils.Constants.WHITE_PROMOTION_ROW;
 
 public class BoardMoveToBoardMoveWithTypeConverter {
+    private BoardMoveToBoardMoveWithTypeConverter() {
+    }
+
     public static BoardMoveWithType convertBoardMoveToBoardMoveWithType(Game game, BoardMove boardMove) {
         BoardMoveType boardMoveType = NON_SPECIAL;
 

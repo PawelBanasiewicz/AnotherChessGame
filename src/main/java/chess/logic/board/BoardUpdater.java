@@ -22,6 +22,8 @@ import static chess.utils.Constants.LAST_COLUMN;
 import static chess.utils.Constants.LAST_ROW;
 
 public class BoardUpdater {
+    private BoardUpdater() {
+    }
 
     public static void updateBoard(Game game) {
         updateControlledSquaresKingsPositionsAndFiguresGivingCheck(game);

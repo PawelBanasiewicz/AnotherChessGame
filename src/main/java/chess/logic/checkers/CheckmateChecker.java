@@ -16,6 +16,9 @@ import static chess.utils.Constants.LAST_COLUMN;
 import static chess.utils.Constants.LAST_ROW;
 
 public class CheckmateChecker {
+    private CheckmateChecker() {
+    }
+
     public static boolean isCheckmate(Game game) {
         if (isCheck(game)) {
             List <BoardMove> kingPossibleMoves = getAllPossibleKingMoves(game);

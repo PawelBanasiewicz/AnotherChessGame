@@ -23,6 +23,9 @@ import static chess.utils.PiecesMapManager.Piece.QUEEN;
 import static chess.utils.PiecesMapManager.Piece.ROOK;
 
 public class PiecesMapManager {
+    private PiecesMapManager() {
+    }
+
     public enum Piece {
         PAWN, KNIGHT, LIGHT_SQUARED_BISHOP, DARK_SQUARED_BISHOP, ROOK, QUEEN, KING
     }

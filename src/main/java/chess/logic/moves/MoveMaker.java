@@ -19,6 +19,8 @@ import static chess.game.GameComponentsUpdater.updateGameComponentsAfterTwoSquar
 import static chess.logic.checkers.LegalMovesChecker.getAllPossibleMovesFromSelectedPosition;
 
 public class MoveMaker {
+    private MoveMaker() {
+    }
 
     public static void makeMove(Game game, BoardMoveWithType boardMoveWithType) {
         BoardMove boardMove = boardMoveWithType.getBoardMove();

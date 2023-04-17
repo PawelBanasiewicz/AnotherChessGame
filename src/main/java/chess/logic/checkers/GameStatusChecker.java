@@ -26,6 +26,9 @@ import static chess.utils.PiecesMapManager.Piece.QUEEN;
 import static chess.utils.PiecesMapManager.Piece.ROOK;
 
 public class GameStatusChecker {
+    private GameStatusChecker() {
+    }
+
     public static GameStatus checkGameStatus(Game game) {
         if (drawByFiftyMoveRule(game)) return FIFTY_MOVE_RULE;
         if (drawByInsufficientMaterialRule(game)) return INSUFFICIENT_MATERIAL;

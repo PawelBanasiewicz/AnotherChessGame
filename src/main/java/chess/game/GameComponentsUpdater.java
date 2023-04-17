@@ -14,6 +14,8 @@ import static chess.utils.PiecesMapManager.addPieceToPiecesMapForAlreadyCreatedG
 import static chess.utils.PiecesMapManager.deletePieceFromPiecesMap;
 
 public class GameComponentsUpdater {
+    private GameComponentsUpdater() {
+    }
 
     public static void updateGameComponentsAfterEveryMove(Game game, BoardMoveType boardMoveType) {
         if (game.getWhoseMove() == FigureColor.BLACK) {
@@ -78,7 +80,7 @@ public class GameComponentsUpdater {
 
     public static void updateGameComponentsAfterTwoSquaresPawnMove(Game game, BoardMove boardMove) {
         int newEnPassantRow = boardMove.getDestinationRow();
-        if(game.getWhoseMove() == WHITE) {
+        if (game.getWhoseMove() == WHITE) {
             newEnPassantRow += 1;
         } else {
             newEnPassantRow -= 1;

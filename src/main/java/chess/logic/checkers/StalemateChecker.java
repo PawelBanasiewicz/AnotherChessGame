@@ -9,8 +9,11 @@ import static chess.logic.checkers.CheckmateChecker.anyPieceHavePossibleMove;
 import static chess.logic.checkers.CheckmateChecker.getAllPossibleKingMoves;
 
 public class StalemateChecker {
+    public StalemateChecker() {
+    }
+
     public static boolean isStalemate(Game game) {
-        List <BoardMove> kingPossibleMoves = getAllPossibleKingMoves(game);
+        List<BoardMove> kingPossibleMoves = getAllPossibleKingMoves(game);
         if (kingPossibleMoves.isEmpty()) {
             return !anyPieceHavePossibleMove(game);
         }

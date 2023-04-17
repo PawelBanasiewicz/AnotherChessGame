@@ -16,6 +16,9 @@ import static chess.utils.Constants.ROOK_SHORT_CASTLE_COLUMN;
 import static chess.utils.Constants.WHITE_CASTLE_ROW;
 
 public class BoardMoveToCastleMoveConverter {
+    private BoardMoveToCastleMoveConverter() {
+    }
+
     public static BoardMove convertBoardMoveToCastleMoveIfNeeded(Game game, BoardMove boardMove) {
         int sourceColumn = boardMove.getSourceColumn();
         int sourceRow = boardMove.getSourceRow();
