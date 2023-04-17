@@ -12,6 +12,7 @@ build/
 .idea/libraries/
 .idea/gradle.xml
 .idea/vcs.xml
+.idea/git_toolbox_prj.xml
 *.iws
 *.iml
 *.ipr
